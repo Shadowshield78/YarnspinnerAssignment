@@ -1,0 +1,182 @@
+﻿title: Start
+position: -117,-137
+---
+???: Hello.
+-> Wh-
+-> Where am I?...
+
+???: This is the Beyond.
+-> The... Beyond?
+
+???: Yes. The Beyond is the realm between life and death.
+-> Am I dead?
+
+???: Yes and no.
+-> Oh. So, I'm in a coma?
+
+???: Essentially.
+-> Interesting... Say, who are you?
+
+Starre: I am Starre, the bridge between the dead and the living. 
+Starre: It is not often I meet with a soul who straddles the line between dead and alive.
+<<jump Node>>
+===
+title: Node
+position: 131,-139
+---
+Starre: Tell me, do you believe you have lived a fulfilling life?
+-> Yes.
+    Starre: That's good then.
+    Starre: Are there things you wish you could do still?
+    -> Yes.
+        Starre: Oh really? 
+        Starre: What kinds of things?
+        -> Skydiving. 
+            Starre: Wonderful! It's good that you have things you'd like to do when you return.
+            -> I can return?
+                Starre: Of course. 
+                Starre: You aren't critically injured and your organs are in perfect condition. 
+                Starre: I am only here to present you with an option.
+                -> So... I can go back whenever I want?
+                    Starre: Exactly.
+                    -> Ah... Strangely, part of me like this. It's blissful almost.
+                        Starre: In that case, how about we chat a little while longer before you make your decision?
+                        -> Okay.
+                        <<jump life>>
+        -> Write a song.
+         Starre: Wonderful! It's good that you have things you'd like to do when you return.
+            -> I can return?
+                Starre: Of course. 
+                Starre: You aren't critically injured and your organs are in perfect condition. 
+                Starre: I am only here to present you with an option.
+                -> So... I can go back whenever I want?
+                    Starre: Exactly.
+                    -> Ah... Strangely, part of me like this. It's blissful almost.
+                        Starre: In that case, how about we chat a little while longer before you make your decision?
+                        -> Okay.
+                        <<jump life>>
+    -> No.
+       Starre: No worries then. 
+       Starre: Anything you're passionate about? 
+       -> I really like music.
+        Starre: Music is a wonderful passion. 
+        Starre: Have you any plans to pursue it?
+        -> It would be fun.
+            Starre: Of course it would.
+            Starre: Doing what you love is what brings you the most joy.
+            -> Yeah. 
+                Starre: Would you like to talk a little bit more?
+                -> Yes please.
+                    Starre: Of course.
+                    <<jump life>>
+       -> Not exactly.
+            Starre: That's no issue either.
+            Starre: Simple life is a good life all the same.
+            -> I guess so.
+                Starre: Child... Are you perhaps content with what you've done in your life?
+                -> A little, yes.
+                    Starre: ...I see. How's about we chat a little while longer before you decide to leave or pass on?
+                    -> Alright.
+                    <<jump NeutralDeath>>
+-> No.
+    Starre: ...I see. That's... Hm. 
+    Starre: Are there things you wish you could do still?
+    -> Yes. 
+        Starre: Oh? Such as what?
+        -> I'd like to develop a video game.
+            Starre: Ah, you humans and your video games... 
+            Starre: Doesn't matter. It's good that you have things you'd like to do.
+            -> Yeah, I suppose.
+                Starre: So, aiming to develop the next big star game like uh...
+                Starre: Oh, what was it called?...
+                Starre: TinyLARGEGlobe?
+                -> Uh... Not quite there but... Yeah. 
+                    Starre: Oh. Pardon me then. 
+                    Starre: I do hope to see what you might come up with one day, my child.
+                    -> Really?
+                        Starre: Really. 
+                        Starre: Should we wrap up our conversation before you make you decide to pass on or leave?
+                        -> Yeah, sounds good.
+                        <<jump Neutrallife>>
+        -> Art is something I wish I could pursue.
+            Starre: Glorious! Art is a truly magnificent thing to want to do. 
+            Starre: Do you think you could become the next Da Vinci?
+            -> Hah, no. Not a chance.
+                Starre: Don't be so hard on yourself!
+                Starre: I am certain that you are capable of even SURPASSING Da Vinci.
+                -> Really?... Thanks Starre.
+                    Starre: Of course child.
+                    Starre: Would you care to talk a little while longer before you decide to pass on or continue?
+                    -> That would be nice.
+                    <<jump Neutrallife>>
+    -> No.
+        Starre: ...Oh. You are... A peculiar human. 
+        Starre: What about this life of yours do you believe has gotten you to this point?
+        -> ...
+            Starre: Oh. 
+            Starre: Oh dear...
+            -> I never said anything.
+                Starre: You didn't have to. 
+                Starre: Your soul cried out to me the moment I asked you that question.
+                -> ...Oh.
+                    Starre: Child... Do you believe that there is more for you in this world?
+                    -> I don't know.
+                        Starre: Do you want to continue living in this world?
+                        -> I don't know.
+                            Starre: I understand.
+                            Starre: A choice such as this is no easy choice at all.
+                            Starre: We can talk a little while longer until you've come to a decision.
+                            -> Okay.
+                            <<jump Death>>
+===
+title: NeutralDeath
+position: -452,-137
+---
+Starre: So child. You believe that there is not much else for you to do in this world?
+-> Yeah. There's not much else I really want to do.
+    Starre: But... There is so much left for you. You are so young!
+    -> That may be so, but I'm happy all the same.
+        Starre: I... See.
+        Starre: If this is what you truly wish for my child, I will not strip you of your decisions.
+        -> Yeah... I think I'm ready to go.
+            Starre: Understood. Be well my child. You are free.
+            <<Fadeout DialogueSystem>>
+===
+title: Death
+position: -444,54
+---
+Starre: My child. Your life has been full of ups and downs.
+Starre: I understand if you are ready to leave it all behind and become free.
+-> I... I want to be free, Starre.
+    Starre: I understand. Your pain and your fears shall not follow you into the afterlife. You are free.
+    <<Fadeout DialogueSystem>>
+===
+title: life
+position: -118,50
+---
+Starre: So my child. Are you happy and content with your life, and wish to continue on and pursue more?
+-> ...Yes. I believe that there is more out there for me.
+ Starre: Perfect. You are one who is destined to do great things.
+    -> Thank you Starre. 
+        Starre: Of course my child. Take care, and may we never have to see each other for a long time.
+        <<Fadeout DialogueSystem>>
+-> I'm still unsure. I don't want to die, but I like it here.
+<<jump Special>>
+===
+title: Special
+position: -117,-137
+---
+Starre: I see... Well. I believe I have the perfect idea for you my child.
+-> ?...
+<<Fadeout DialogueSystem>>
+
+===
+title: Neutrallife
+position: -117,-137
+---
+Starre: So. Despite your hardships, you wish to continue living on in pursuit of your dreams and happiness?
+-> Yes. Life has been hard to me now, but I wish to continue on and one day find the happiness that awaits me.
+    Starre: Magnificent. You truly are a strong child....
+    Starre: Farewell now. Happiness is just around the corner, child.
+    <<Fadeout DialogueSystem>>
+===
